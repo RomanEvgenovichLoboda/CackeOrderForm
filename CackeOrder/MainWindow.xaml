@@ -1,0 +1,60 @@
+﻿<Window x:Class="CackeOrder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CackeOrder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="660" Width="800">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="abstract-pyatna-fon-svet-sinii-132490 (1).jpeg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22*"></RowDefinition>
+            <RowDefinition Height="54*"></RowDefinition>
+            <RowDefinition Height="46*"></RowDefinition>
+            <RowDefinition Height="46*"></RowDefinition>
+            <RowDefinition Height="46*"></RowDefinition>
+            <RowDefinition Height="48*"></RowDefinition>
+            <RowDefinition Height="46*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="65*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80*"></ColumnDefinition>
+            <ColumnDefinition Width="265*"></ColumnDefinition>
+            <ColumnDefinition Width="265*"></ColumnDefinition>
+            <ColumnDefinition Width="184*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="1" Grid.Column="1" FontSize="30" Foreground="White" Content="Cake Order Form" Grid.ColumnSpan="2" Margin="0,4.6,264.6,1.8"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Margin="5,3.2,209.6,7.4" TextWrapping="Wrap" Foreground="White" Grid.ColumnSpan="2" Text="Please fill in your information and we'll be your order in no time" />
+        <Label Grid.Row="3" Grid.Column="1" Margin="5,2.6,199.8,9.8" Foreground="White" FontSize="16" Content="Name"></Label>
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="80,10,10,10" Background="White" Foreground="Gray" FontSize="18" Text="  First Name"></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="2" Margin="20.2,10,49.6,10" Background="White" Foreground="Gray" FontSize="18" Text="  Last Name"></TextBox>
+        <Label Grid.Row="4" Grid.Column="1" Margin="5,1.2,199.8,4.4" Foreground="White" FontSize="16" Content="Email"></Label>
+        <TextBox Grid.Row="4" Grid.Column="1" Margin="80,10,10,10" Background="White" FontSize="18"></TextBox>
+        <Label Grid.Row="4" Grid.Column="2" Margin="20.2,1.2,169.6,4.4" Foreground="White" FontSize="16" Content="Quantity"></Label>
+        <TextBox Grid.Row="4" Grid.Column="2" Margin="130.2,10,49.6,10" Background="White" FontSize="18"></TextBox>
+        <TextBlock Grid.Row="5" Grid.Column="1" Margin="5,5.6,189.8,2.4" Foreground="White" Text="Shipping Address" FontSize="16" TextWrapping="Wrap" ></TextBlock>
+        <TextBox Grid.Row="5" Grid.Column="1" Margin="80,10,50,10" Grid.ColumnSpan="2" Background="White" FontSize="18"></TextBox>
+        <TextBox Grid.Row="6" Grid.Column="1" Margin="80,10,10,10" Background="White" Foreground="Gray" FontSize="18" Text="  City"></TextBox>
+        <TextBox Grid.Row="6" Grid.Column="2" Margin="20,10,50,10" Background="White" Foreground="Gray" FontSize="18" Text="  Country"></TextBox>
+        <TextBlock Grid.Row="7" Grid.Column="1" Margin="5,5.2,174.8,60" Foreground="White" FontSize="14" TextWrapping="Wrap" Text="Select your products"></TextBlock>
+        <CheckBox Grid.Row="7" Grid.Column="1" Margin="85,10,5,5">
+            <Image Source="cake.png" Width="150"/>
+        </CheckBox>
+        <CheckBox Grid.Row="7" Grid.Column="2" Margin="5,10,50,5">
+            <Image Source="cake1.png" Width="150"/>
+        </CheckBox>
+        <CheckBox Grid.Row="8" Grid.Column="1" Margin="85,10,5,5">
+            <Image Source="cake2.png" Width="150"/>
+        </CheckBox>
+        <CheckBox Grid.Row="8" Grid.Column="2" Margin="5,10,5,5">
+            <Image Source="cake3.png" Width="150"/>
+        </CheckBox>
+        <Button Grid.Row="9" Grid.Column="1" Margin="5,10,170,40" Background="#16718f" Foreground="White" BorderBrush="#16718f" Content="PURCHASE"/>
+    </Grid>
+</Window>
